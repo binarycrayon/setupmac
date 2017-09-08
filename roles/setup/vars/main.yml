@@ -1,0 +1,51 @@
+---
+# list of applications to install
+general:
+  local_home: "{{ lookup('env','HOME') }}"
+
+# homebrew applications
+applications:
+  - autojump
+  - git
+  - tree
+  - httpie
+  - curl
+  - wget
+  - zsh
+  - python
+  - python3
+  - vim
+  - ag 
+  - terraform
+  - emacs
+  - youtube-dl
+  - rlwrap
+  - tmux
+  - clisp
+  - sbcl
+  - task
+
+# homebrew cask applications
+cask_applications:
+  - google-chrome
+  - bettertouchtool
+  - iterm2
+  - emacs
+  - caffeine
+  - dash
+  - dropbox
+  - vagrant
+  - 1password
+  - virtualbox
+  - bartender
+  - font-source-code-pro
+  - font-inconsolata-dz
+  - font-inconsolata
+  - font-inconsolata-nerd-font
+  - font-inconsolata-nerd-font-mono
+
+downloads:
+   firefox-nightly:
+     name: Firefox Nightly
+     url: https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central/firefox-57.0a1.en-US.mac.dmg
+     dest: "{{general.local_home}}/Downloads/firefox-mac.dmg"
