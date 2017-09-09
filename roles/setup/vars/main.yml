@@ -24,6 +24,8 @@ applications:
   - clisp
   - sbcl
   - task
+  - heroku
+  - direnv
 
 # homebrew cask applications
 cask_applications:
