@@ -37,6 +37,7 @@ cask_applications:
   - dash
   - dropbox
   - vagrant
+  - vlc
   - 1password
   - virtualbox
   - bartender

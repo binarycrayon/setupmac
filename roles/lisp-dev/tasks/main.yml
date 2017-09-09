@@ -1,0 +1,22 @@
+---
+# sbcl has been installed via homebrew in setup role
+
+- name: Download Quicklisp
+  get_url: url=http://beta.quicklisp.org/quicklisp.lisp
+           dest=/tmp/quicklisp.lisp
+  when: interactive_user is defined
+
+- name: Install Quicklisp
+  sudo: True
+  sudo_user: "{{ interactive_user }}"
+  script: ql-install.sh
+  when: interactive_user is defined
+
+- name: Add Quicklisp to SBCL's config file
+  copy: src=sbclrc dest=/home/{{ interactive_user }}/.sbclrc
+  sudo: True
+  sudo_user: "{{ interactive_user }}"
+  when: interactive_user is defined
+
+- name: Clean up the Quicklisp setup file
+  file: path=/tmp/quicklisp.lisp state=absent
