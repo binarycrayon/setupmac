@@ -30,6 +30,7 @@ applications:
 # homebrew cask applications
 cask_applications:
   - google-chrome
+  - firefox
   - bettertouchtool
   - iterm2
   - emacs
@@ -42,10 +43,13 @@ cask_applications:
   - virtualbox
   - bartender
   - font-source-code-pro
+  - font-source-code-pro-for-powerline
+  - font-sourcecodepro-nerd-font
   - font-inconsolata-dz
   - font-inconsolata
   - font-inconsolata-nerd-font
   - font-inconsolata-nerd-font-mono
+  - taskwarrior-pomodoro
 
 downloads:
    firefox-nightly:
