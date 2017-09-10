@@ -1,7 +1,6 @@
 ### Setupmac
 
-This is a [Ansible](https://www.ansible.com/) playbook to quickly setup 
-a Mac.
+This is a [Ansible](https://www.ansible.com/) playbook to quickly setup a Mac.
 
 To setup run the following command :
 ```
@@ -24,7 +23,7 @@ The applications it cannot install through homebrew get's downloaded to
 
 #### Uninstall
 
-If you want to undo all the changes that `setupmac` did, run 
+Undo all the changes from this playbook
 
 ```
 start.sh uninstall
